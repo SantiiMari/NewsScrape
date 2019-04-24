@@ -1,0 +1,38 @@
+<div>
+    <h1 class="card z-depth-3 center-align">True Crime News </h1>
+    <div class="row">
+
+
+        
+  <div class="row">
+    <div class="col s6">
+      <div class="card large">
+        <div class="card-image">
+          <img src="public/assets/images/fingerprint.jpg">
+          <span class="card-title">Card Title</span>
+        </div>
+        <div class="card-content">
+          <p class="question">What crimes are happening?</p>
+        </div>
+        <div class="card-action">
+          <a href="../Models/article.js">Articles</a>
+        </div>
+      </div>
+    </div>
+  </div>
+        
+    </div>
+</div>
+<div class="row">
+    <div class="col s2"></div>
+    <div class="col s8 left-align">
+        {{#each article}}
+        <div class="card-panel">
+            <h4>{{this.title}}</h4>
+            <a href="/readArticle/{{this._id}}" class="waves-effect waves-light btn-large" id="btnSignUp">Read Article</a>
+        </div>
+
+        {{/each}}
+    </div>
+</div>
+   
